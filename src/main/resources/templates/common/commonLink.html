@@ -23,6 +23,11 @@
 		<!-- Header -->
         <th:block th:replace="common/commonSource :: header"></th:block>
         
+		<!-- Header -->
+		<th:block th:if="${mainParam.mainYn == 'N'}">
+            <th:block th:replace="common/commonSource :: where"></th:block>
+        </th:block>        
+        
 		<!-- carouse -->
 		<th:block th:if="${mainParam.mainYn == 'Y'}">
             <th:block th:replace="common/commonLink :: carouselLink"></th:block>
