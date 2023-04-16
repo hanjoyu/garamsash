@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <th:block th:fragment="head">
+		<!-- carousel -->
+        <th:block th:replace="common/commonSource :: head"></th:block>
+    </th:block>
+    
+    <th:block th:fragment="carouselLink">
+		<!-- carousel -->
+        <th:block th:replace="common/commonSource :: carousel"></th:block>
+    </th:block>
+    
+    <th:block th:fragment="bodyLink">
+		<!-- loading -->
+        <th:block th:replace="common/commonSource :: loading"></th:block>
+
+		<!-- Header -->
+        <th:block th:replace="common/commonSource :: header"></th:block>
+        
+		<!-- carouse -->
+		<th:block th:if="${mainParam.mainYn == 'Y'}">
+            <th:block th:replace="common/commonLink :: carouselLink"></th:block>
+        </th:block>
+        
+		<!-- bookBox -->
+        <th:block th:replace="common/commonSource :: bookBox"></th:block>
+    </th:block>
+</body>
+</html>
