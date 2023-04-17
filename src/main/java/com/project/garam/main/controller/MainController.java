@@ -1,4 +1,4 @@
-package com.project.garam;
+package com.project.garam.main.controller;
 
 import java.util.HashMap;
 import java.util.Map;

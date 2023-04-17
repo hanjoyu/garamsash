@@ -8,33 +8,42 @@
 <body>
     <th:block th:fragment="head">
 		<!-- carousel -->
-        <th:block th:replace="common/commonSource :: head"></th:block>
+        <th:block th:replace="~{common/commonSource :: head}"></th:block>
     </th:block>
     
     <th:block th:fragment="carouselLink">
 		<!-- carousel -->
-        <th:block th:replace="common/commonSource :: carousel"></th:block>
+        <th:block th:replace="~{common/commonSource :: carousel}"></th:block>
     </th:block>
     
     <th:block th:fragment="bodyLink">
 		<!-- loading -->
-        <th:block th:replace="common/commonSource :: loading"></th:block>
+        <th:block th:replace="~{common/commonSource :: loading}"></th:block>
 
 		<!-- Header -->
-        <th:block th:replace="common/commonSource :: header"></th:block>
+        <th:block th:replace="~{common/commonSource :: header}"></th:block>
         
 		<!-- Header -->
 		<th:block th:if="${mainParam.mainYn == 'N'}">
-            <th:block th:replace="common/commonSource :: where"></th:block>
+            <th:block th:replace="~{common/commonSource :: smallHeader}"></th:block>
         </th:block>        
         
 		<!-- carouse -->
 		<th:block th:if="${mainParam.mainYn == 'Y'}">
-            <th:block th:replace="common/commonLink :: carouselLink"></th:block>
+            <th:block th:replace="~{common/commonLink :: carouselLink}"></th:block>
         </th:block>
         
 		<!-- bookBox -->
-        <th:block th:replace="common/commonSource :: bookBox"></th:block>
+        <th:block th:replace="~{common/commonSource :: bookBox}"></th:block>
     </th:block>
+    
+		<!-- footer -->
+		<th:block th:fragment="footer">
+            <th:block th:replace="~{common/commonSource :: footer}"></th:block>
+        </th:block>        
+		<!-- libraries -->
+		<th:block th:fragment="libraries">
+            <th:block th:replace="~{common/commonSource :: libraries}"></th:block>
+        </th:block>
 </body>
 </html>
