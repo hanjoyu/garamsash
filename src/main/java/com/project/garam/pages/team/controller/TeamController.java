@@ -18,7 +18,7 @@ public class TeamController {
 	public ModelAndView aboutMain(ModelAndView mv) {
 Map<String, String> mainMap = new HashMap<>();
 		
-		mainMap.put("mainYn", "N");
+		mainMap.put("mainYn", "N"); // main N
 		mv.addObject("mainParam", mainMap);
 		mv.setViewName(CommonRoot.MAIN_ROOT + "team");
 		
