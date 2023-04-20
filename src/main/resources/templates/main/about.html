@@ -3,13 +3,13 @@
 	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
 >
 <!-- head -->
-<th:block th:replace="common/commonLink :: head"></th:block>
+<th:block th:replace="~{common/commonLink :: head}"></th:block>
 
 <body>
     <div class="container-xxl bg-white p-0">
     
 	    <!-- bodyLink -->
-        <th:block th:replace="common/commonLink :: bodyLink"></th:block> 
+        <th:block th:replace="~{common/commonLink :: bodyLink}"></th:block> 
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -169,14 +169,14 @@
         <!-- Newsletter Start -->
 
         <!-- footer -->
-        <th:block th:replace="common/commonLink :: footer"></th:block>
+        <th:block th:replace="~{common/commonLink :: footer}"></th:block>
         
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
         
         <!-- libraries -->
-        <th:block th:replace="common/commonLink :: libraries"></th:block>
+        <th:block th:replace="~{common/commonLink :: libraries}"></th:block>
 </body>
 
 </html>
