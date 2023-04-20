@@ -12,5 +12,4 @@ public class SashApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SashApplication.class, args);
 	}
-
 }

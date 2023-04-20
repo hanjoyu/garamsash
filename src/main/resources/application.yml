@@ -29,5 +29,12 @@ logging:
     user:
       name: admin
       password: admin
+      
+      #MyBatis snake case to camel case
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+  mapper-locations: classpath:mappers/**/*.xml
 
     
