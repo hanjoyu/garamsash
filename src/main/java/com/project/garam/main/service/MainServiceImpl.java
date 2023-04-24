@@ -25,9 +25,9 @@ public class MainServiceImpl {
 		mainDto.setJob("tester");
 
 		mainDTO mainDto2 = new mainDTO();
-		mainDto.setEmpno(99);
-		mainDto.setEname("test1");
-		mainDto.setJob("tester");
+		mainDto2.setEmpno(99);
+		mainDto2.setEname("test1");
+		mainDto2.setJob("tester");
 		mainDto2 = mainMapper.test2();
 		
 		mainDTO mainDto3 = new mainDTO();
