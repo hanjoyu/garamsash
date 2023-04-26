@@ -5,6 +5,8 @@
 select * from test
 </select>
 <update id="updateTest" parameterType="com.project.garam.main.dto.mainDTO">
-select * from test
+update test
+   set empNo = '5'
 </update>
+
 </mapper>
