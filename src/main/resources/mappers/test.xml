@@ -4,4 +4,7 @@
 <select id="test2" resultType="com.project.garam.main.dto.mainDTO">
 select * from test
 </select>
+<update id="updateTest" parameterType="com.project.garam.main.dto.mainDTO">
+select * from test
+</update>
 </mapper>
