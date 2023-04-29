@@ -20,7 +20,7 @@ public class MainServiceImpl {
 
 	public void tester() {
 		mainDTO mainDto = new mainDTO();
-		mainDto.setEmpno(99);
+		mainDto.setEmpno(98);
 		mainDto.setEname("test1");
 		mainDto.setJob("tester");
 

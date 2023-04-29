@@ -1,4 +1,21 @@
-2023-04-24T08:06:03.040+09:00  WARN 20200 --- [HikariPool-37 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-37 - Thread starvation or clock leap detected (housekeeper delta=1d15h45m35s448ms699µs400ns).
-2023-04-24T08:06:37.916+09:00  INFO 20200 --- [http-nio-8050-exec-3] o.a.c.c.C.[Tomcat-12].[localhost].[/]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-04-24T08:06:37.928+09:00  INFO 20200 --- [http-nio-8050-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-04-24T08:06:38.339+09:00  INFO 20200 --- [http-nio-8050-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 399 ms
+2023-04-29T01:18:15.392+09:00  WARN 20200 --- [HikariPool-47 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-47 - Thread starvation or clock leap detected (housekeeper delta=6h18m20s762ms965µs).
+2023-04-29T13:31:15.582+09:00  WARN 20200 --- [HikariPool-47 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-47 - Thread starvation or clock leap detected (housekeeper delta=11h43m57s510ms105µs).
+2023-04-29T15:38:07.953+09:00  WARN 20200 --- [HikariPool-47 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-47 - Thread starvation or clock leap detected (housekeeper delta=2h2m52s176ms865µs400ns).
+2023-04-29T15:45:51.481+09:00  INFO 20200 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-29T15:46:11.069+09:00  WARN 20200 --- [Thread-293] org.apache.tomcat.util.net.NioEndpoint   : Failed to unlock acceptor for [http-nio-8050] because the local address was not available
+2023-04-29T15:46:11.086+09:00  INFO 20200 --- [Thread-293] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-29T15:46:11.069+09:00 ERROR 20200 --- [http-nio-8050-Acceptor] org.apache.tomcat.util.net.Acceptor      : Socket accept failed
+
+java.nio.channels.AsynchronousCloseException: null
+	at java.base/java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.end(ServerSocketChannelImpl.java:376) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:399) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:521) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:79) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:128) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-04-29T15:46:18.188+09:00  INFO 20200 --- [Thread-293] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown initiated...
+2023-04-29T15:46:18.418+09:00  INFO 20200 --- [Thread-293] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown completed.
+2023-04-29T15:46:27.641+09:00  INFO 20200 --- [restartedMain] com.project.garam.SashApplication        : Starting SashApplication using Java 17.0.3 with PID 20200 (C:\Users\hanjo\OneDrive\바탕 화면\garamSash\sash\target\classes started by hanjo in C:\Users\hanjo\OneDrive\바탕 화면\garamSash\sash)
+2023-04-29T15:46:27.642+09:00  INFO 20200 --- [restartedMain] com.project.garam.SashApplication        : No active profile set, falling back to 1 default profile: "default"
