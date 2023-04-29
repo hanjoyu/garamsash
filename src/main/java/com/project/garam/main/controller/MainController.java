@@ -28,7 +28,8 @@ public class MainController {
 	public ModelAndView main(ModelAndView mv) {
 		
 		Map<String, String> mainMap = new HashMap<>();
-		
+
+		/* main 메서드 빼내기 */
 		mainMap.put("mainYn", "Y");
 		mv.addObject("mainParam", mainMap);
 		mv.setViewName(CommonRoot.MAIN_ROOT + "main");
