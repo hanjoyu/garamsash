@@ -16,7 +16,7 @@ import com.project.garam.common.util.CommonUtil;
 @RequestMapping("pages/book")
 public class BookController {
 
-	private CommonUtil commonUtil;
+	private final CommonUtil commonUtil;
 
 	@Autowired
 	BookController(CommonUtil commonUtil) {

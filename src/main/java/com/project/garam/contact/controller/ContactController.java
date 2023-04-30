@@ -16,7 +16,7 @@ import com.project.garam.common.util.CommonUtil;
 @RequestMapping("contact")
 public class ContactController {
 
-	private CommonUtil commonUtil;
+	private final CommonUtil commonUtil;
 
 	@Autowired
 	public ContactController(CommonUtil commonUtil) {

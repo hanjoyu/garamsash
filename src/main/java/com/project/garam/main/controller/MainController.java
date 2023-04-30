@@ -17,8 +17,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class MainController {
 
-	private MainServiceImpl mainService;
-	private CommonUtil commonUtil;
+	private final MainServiceImpl mainService;
+	private final CommonUtil commonUtil;
 	
 	@Autowired
 	MainController(MainServiceImpl mainService, CommonUtil commonUtil){

@@ -16,7 +16,7 @@ import com.project.garam.common.util.CommonUtil;
 @RequestMapping("about")
 public class AboutController {
 	
-	private CommonUtil commonUtil;
+	private final CommonUtil commonUtil;
 	
 	@Autowired
 	AboutController(CommonUtil commonUtil){
