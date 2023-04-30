@@ -8,8 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.project.garam.common.CommonRoot;
-import com.project.garam.common.util.MainUtil;
+import com.project.garam.common.util.CommonUtil;
 import com.project.garam.main.service.MainServiceImpl;
 
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 public class MainController {
 
 	private MainServiceImpl mainService;
-	private MainUtil mainUtil;
+	private CommonUtil commonUtil;
 	@Autowired
 	MainController(MainServiceImpl mainService){
 		this.mainService = mainService;
@@ -32,7 +31,7 @@ public class MainController {
 
 		/* main 메서드 빼내기 */
 		mainMap.put("mainYn", "Y");
-		
+		commonUtil.mainYn(mv, mainMap);
 		mainService.tester();
 
 		return mv;

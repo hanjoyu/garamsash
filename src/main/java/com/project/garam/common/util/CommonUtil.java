@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.project.garam.common.CommonRoot;
 
-public class MainUtil {
+public class CommonUtil {
 
 	public ModelAndView mainYn(ModelAndView mv, Map<String, String> mainMap) {
 		
