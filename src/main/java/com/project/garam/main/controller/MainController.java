@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.project.garam.common.util.CommonUtil;
+import com.project.garam.main.service.MainService;
 import com.project.garam.main.service.MainServiceImpl;
 
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class MainController {
 
-	private final MainServiceImpl mainService;
+	private final MainService mainService;
 	private final CommonUtil commonUtil;
 	
 	@Autowired
@@ -34,7 +35,7 @@ public class MainController {
 		/* main 메서드 빼내기 */
 		mainMap.put("mainYn", "Y");
 		commonUtil.mainYn(mv, mainMap, "main");
-		mainService.tester();
+		mainService.selectAllEmployee();
 
 		return mv;
 	}
