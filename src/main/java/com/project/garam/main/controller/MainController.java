@@ -19,9 +19,11 @@ public class MainController {
 
 	private MainServiceImpl mainService;
 	private CommonUtil commonUtil;
+	
 	@Autowired
-	MainController(MainServiceImpl mainService){
+	MainController(MainServiceImpl mainService, CommonUtil commonUtil){
 		this.mainService = mainService;
+		this.commonUtil = commonUtil;
 	}
 	
 	@GetMapping(value= {"/", "/main"})
@@ -31,7 +33,7 @@ public class MainController {
 
 		/* main 메서드 빼내기 */
 		mainMap.put("mainYn", "Y");
-		commonUtil.mainYn(mv, mainMap);
+		commonUtil.mainYn(mv, mainMap, "main");
 		mainService.tester();
 
 		return mv;
