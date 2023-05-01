@@ -6,7 +6,7 @@
 <th:block th:fragment="head">
 	<head>
 	    <meta charset="utf-8">
-	    <title>Hotelier - Hotel HTML Template</title>
+	    <title>garam Sash</title>
 	    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 	    <meta content="" name="keywords">
 	    <meta content="" name="description">
@@ -49,10 +49,12 @@
                         <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">premium sash</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">Sash for luxury interior</h1>
+                                <!-- 
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                 -->
                             </div>
                         </div>
                     </div>
@@ -60,10 +62,12 @@
                         <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
-                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Luxury Living</h6>
-                                <h1 class="display-3 text-white mb-4 animated slideInDown">Discover A Brand Luxurious Hotel</h1>
+                                <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">premium sash</h6>
+                                <h1 class="display-3 text-white mb-4 animated slideInDown">Sash for luxury living</h1>
+                                <!-- 
                                 <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
                                 <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
+                                 -->
                             </div>
                         </div>
                     </div>
@@ -93,15 +97,13 @@
     </th:block>
     <!-- loading End -->
         
-        
-        
     <!-- header Start(contain menuBar) -->
     <th:block th:fragment="header">
         <div class="container-fluid bg-dark px-0">
             <div class="row gx-0">
                 <div class="col-lg-3 bg-dark d-none d-lg-block">
-                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                        <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
+                    <a href="/main" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 class="m-0 text-primary text-uppercase">garam</h1>
                     </a>
                 </div>
                 <div class="col-lg-9">
@@ -109,11 +111,11 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <p class="mb-0">garam64@naver.com</p>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <p class="mb-0">+012 345 6789</p>
+                                <p class="mb-0">010 - 9161 - 1855</p>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
@@ -186,49 +188,39 @@
     </th:block>    
     <!-- header -->
     
-    
     <!-- bookBox Start -->
     <th:block th:fragment="bookBox">
         <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
-                <div class="bg-white shadow" style="padding: 35px;">
+                <form id="councelReservation" class="bg-white shadow" style="padding: 35px;">
                     <div class="row g-2">
                         <div class="col-md-10">
                             <div class="row g-2">
                                 <div class="col-md-3">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    <div class="councel">
+                                        <input id="councelName" name="councelName" type="text" class="form-control datetimepicker-input" placeholder="성함"/>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    <div class="councel">
+                                        <input id="councelPhone" name="councelPhone" type="text" class="form-control datetimepicker-input" placeholder="전화번호"/>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Adult</option>
-                                        <option value="1">Adult 1</option>
-                                        <option value="2">Adult 2</option>
-                                        <option value="3">Adult 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-3">
-                                    <select class="form-select">
-                                        <option selected>Child</option>
-                                        <option value="1">Child 1</option>
-                                        <option value="2">Child 2</option>
-                                        <option value="3">Child 3</option>
+                                    <select id="councelType" name="councelType" class="councel-select">
+                                        <option selected>상담 분류</option>
+                                        <option value="1">type 1</option>
+                                        <option value="2">type 2</option>
+                                        <option value="3">type 3</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-primary w-100">Submit</button>
+                            <button class="btn btn-primary w-100" type="button" onclick="councelReservation('#councelReservation');">Submit</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </th:block>    
@@ -321,6 +313,42 @@
 
     <!-- Template Javascript -->
     <script src="/js/main.js"></script>
+    
+    <!-- councel reservation ajax -->
+    <script>
+	function councelReservation(formId) {
+		
+		var inputData = $(formId).serialize();
+		console.log("가기 전:" + inputData);
+		councelReservationAjax(inputData);
+	}
+
+	/* 블랙리스트 ajax */
+	function councelReservationAjax(inputData) {
+		$.ajax({
+					url : "/pages/book/councelReservation",
+					type: "post",
+					data : inputData,
+					success : function(returnData) {
+						let resultData = JSON.stringify(returnData);
+						let resultCd = JSON.stringify(returnData.resultCd);
+						let resultMsg = JSON.stringify(returnData.resultMsg);
+						
+					console.table("success: " + resultData);
+					console.log(resultCd);
+					
+					if(resultCd == JSON.stringify("Y")){
+						alert("예약 상담이 완료되었습니다.");
+					}
+					
+						
+					},
+					error : function(error) {
+						console.log(error);
+					}
+				});
+	};
+    </script>
     </th:block>
 </body>
 </html>
