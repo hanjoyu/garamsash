@@ -51,10 +51,6 @@
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">premium sash</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Sash for luxury interior</h1>
-                                <!-- 
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
-                                 -->
                             </div>
                         </div>
                     </div>
@@ -64,10 +60,6 @@
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">premium sash</h6>
                                 <h1 class="display-3 text-white mb-4 animated slideInDown">Sash for luxury living</h1>
-                                <!-- 
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Our Rooms</a>
-                                <a href="" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Book A Room</a>
-                                 -->
                             </div>
                         </div>
                     </div>
@@ -140,18 +132,56 @@
     <!-- menuBar Start -->
     <th:block th:fragment="menuBar">
 	    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
-	        <a href="index.html" class="navbar-brand d-block d-lg-none">
-	            <h1 class="m-0 text-primary text-uppercase">Hotelier</h1>
-	        </a>
 	        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
 	            <span class="navbar-toggler-icon"></span>
 	        </button>
 	        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
 	            <div class="navbar-nav mr-auto py-0">
+	            
+	            <!-- main 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'main'}">
 	                <a href="/main" class="nav-item nav-link active">Home</a>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'main'}">
+	                <a href="/main" class="nav-item nav-link">Home</a>
+	            </th:block>
+	            
+	            <!-- main about 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'about'}">
+	                <a href="/about/main" class="nav-item nav-link active">About</a>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'about'}">
 	                <a href="/about/main" class="nav-item nav-link">About</a>
+	            </th:block>
+	            
+	            <!-- main service 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'services'}">
+	                <a href="/services/main" class="nav-item nav-link active">Services</a>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'services'}">
 	                <a href="/services/main" class="nav-item nav-link">Services</a>
+	            </th:block>
+	            
+	            <!-- main room 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'room'}">
+	                <a href="/room/main" class="nav-item nav-link active">Rooms</a>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'room'}">
 	                <a href="/room/main" class="nav-item nav-link">Rooms</a>
+	            </th:block>
+	            
+	            <!-- main pages 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'pages'}">
+	                <div class="nav-item dropdown">
+	                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+	                    <div class="dropdown-menu rounded-0 m-0">
+	                        <a href="/pages/book/main" class="dropdown-item">Book</a>
+	                        <a href="/pages/team/main" class="dropdown-item">Our Team</a>
+	                        <a href="/pages/testimonial/main" class="dropdown-item">Testimonial</a>
+	                    </div>
+	                </div>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'pages'}">
 	                <div class="nav-item dropdown">
 	                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
 	                    <div class="dropdown-menu rounded-0 m-0">
@@ -160,7 +190,17 @@
 	                        <a href="/pages/testimonial/main" class="dropdown-item">Testimonial</a>
 	                    </div>
 	                </div>
+	            </th:block>
+	                
+	            <!-- contact about 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'contact'}">
+	                <a href="/contact/main" class="nav-item nav-link active">Contact</a>
+	            </th:block>    
+	            <th:block th:unless="${mainParam.viewName == 'contact'}">
 	                <a href="/contact/main" class="nav-item nav-link">Contact</a>
+	            </th:block>
+	            
+	                
 	            </div>
 	            <a href="https://htmlcodex.com/hotel-html-template-pro" class="btn btn-primary rounded-0 py-4 px-md-5 d-none d-lg-block">Premium Version<i class="fa fa-arrow-right ms-3"></i></a>
 	        </div>
