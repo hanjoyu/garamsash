@@ -24,11 +24,17 @@ public class TestimonialController {
 
 	}
 
+	/*
+	 * author : 유한조(hanjo94@gmail.com)
+	 * date : 2023. 05. 02 
+	 * name : aboutMain
+	 * content : 메인으로 이동
+	 */
 	@GetMapping("main")
 	public ModelAndView aboutMain(ModelAndView mv) {
 		Map<String, String> mainMap = new HashMap<>();
 
-		mainMap.put("mainYn", "N");
+		mainMap.put("mainYn", "N"); 
 		commonUtil.mainYn(mv, mainMap, "testimonial");
 
 		return mv;
