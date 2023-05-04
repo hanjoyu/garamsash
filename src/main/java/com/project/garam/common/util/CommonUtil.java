@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.project.garam.common.CommonConstant;
 
 @Component
+
 public class CommonUtil {
 
 	public ModelAndView mainYn(ModelAndView mv, Map<String, String> mainMap, String viewName) {
