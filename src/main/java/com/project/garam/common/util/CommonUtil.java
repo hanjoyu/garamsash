@@ -12,6 +12,12 @@ import com.project.garam.common.CommonConstant;
 
 public class CommonUtil {
 
+	/*
+	 * author : 유한조(hanjo94@gmail.com)
+	 * date : 2023. 05. 06 
+	 * name : mainYn
+	 * content : main 여부를 리턴
+	 */
 	public ModelAndView mainYn(ModelAndView mv, Map<String, String> mainMap, String viewName) {
 
 		String forPage = "";
