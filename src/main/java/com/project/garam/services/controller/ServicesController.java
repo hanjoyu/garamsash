@@ -22,6 +22,12 @@ public class ServicesController {
 		this.commonUtil = commonUtil;
 	}
 	
+	/*
+	 * author : 유한조(hanjo94@gmail.com)
+	 * date : 2023. 05. 07
+	 * name : aboutMain
+	 * content : about main을 위한 controller
+	 */
 	@GetMapping("main")
 	public ModelAndView aboutMain(ModelAndView mv) {
 Map<String, String> mainMap = new HashMap<>();
