@@ -27,6 +27,12 @@ public class MainController {
 		this.commonUtil = commonUtil;
 	}
 	
+	/*
+	 * author : 유한조(hanjo94@gmail.com)
+	 * date : 2023. 05. 07
+	 * name : main
+	 * content : main으로 가는 controller
+	 */
 	@GetMapping(value= {"/", "/main"})
 	public ModelAndView main(ModelAndView mv) {
 		
