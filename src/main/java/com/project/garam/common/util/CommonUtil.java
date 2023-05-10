@@ -14,7 +14,7 @@ public class CommonUtil {
 
 	/*
 	 * author : 유한조(hanjo94@gmail.com)
-	 * date : 2023. 05. 06 
+	 * date : 2023. 05. 10
 	 * name : mainYn
 	 * content : main 여부를 리턴
 	 */
