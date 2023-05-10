@@ -29,7 +29,7 @@ public class AboutController {
 	 * date : 2023. 05. 06
 	 * name : aboutMain
 	 * content : about page 메인 controller
-	 */
+	 */ 
 	@GetMapping("main")
 	public ModelAndView aboutMain(ModelAndView mv) {
 Map<String, String> mainMap = new HashMap<>();
