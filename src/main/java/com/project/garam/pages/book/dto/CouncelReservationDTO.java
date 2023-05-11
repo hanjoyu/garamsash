@@ -11,5 +11,6 @@ public class CouncelReservationDTO {
 	private String councelName; // 상담자 이름
 	private String councelPhone; // 상담자 핸드폰
 	private String councelType; // 상담 분류
+	private String councelContent; // 상담 분류
 	
 }
