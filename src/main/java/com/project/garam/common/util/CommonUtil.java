@@ -34,5 +34,9 @@ public class CommonUtil {
 
 		return mv;
 	}
+	
+	public boolean nullUtil(Object obj) {
+		return obj == null ? true : false;
+	}
 
 }
