@@ -39,4 +39,10 @@ Map<String, String> mainMap = new HashMap<>();
 		
 		return mv;
 	}
+	
+	public ModelAndView aboutTest(ModelAndView mv) {
+		mv.addObject("firstTest", "test1");
+		
+		return mv;
+	}
 }
