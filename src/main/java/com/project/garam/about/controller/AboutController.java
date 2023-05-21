@@ -10,17 +10,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.project.garam.about.service.AboutService;
 import com.project.garam.common.CommonConstant;
 import com.project.garam.common.util.CommonUtil;
+
+import lombok.extern.slf4j.Slf4j;
 @Controller
 @RequestMapping("about")
+@Slf4j
 public class AboutController {
 	
 	private final CommonUtil commonUtil;
+	private final AboutService aboutService;
 	
 	@Autowired
-	AboutController(CommonUtil commonUtil){
+	AboutController(CommonUtil commonUtil, AboutService aboutService){
 		this.commonUtil = commonUtil;
+		this.aboutService = aboutService;
 		
 	}
 	
@@ -41,8 +47,9 @@ Map<String, String> mainMap = new HashMap<>();
 	}
 	
 	public ModelAndView aboutTest(ModelAndView mv) {
-		mv.addObject("firstTest", "test1");
-		
+aboutService.aboutTest(mv);
+
+log.debug("=========== input Parameter ===========:: {} ", mv);
 		return mv;
 	}
 }
