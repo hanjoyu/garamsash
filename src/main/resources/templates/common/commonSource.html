@@ -154,12 +154,12 @@
 	                <a href="/about/main" class="nav-item nav-link">About</a>
 	            </th:block>
 	            
-	            <!-- main service 여부 -->
-	            <th:block th:if="${mainParam.viewName == 'services'}">
-	                <a href="/services/main" class="nav-item nav-link active">Services</a>
+	            <!-- main construction 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'construction'}">
+	                <a href="/construction/main" class="nav-item nav-link active">construction</a>
 	            </th:block>    
-	            <th:block th:unless="${mainParam.viewName == 'services'}">
-	                <a href="/services/main" class="nav-item nav-link">Services</a>
+	            <th:block th:unless="${mainParam.viewName == 'construction'}">
+	                <a href="/construction/main" class="nav-item nav-link">construction</a>
 	            </th:block>
 	            
 	            <!-- main room 여부 -->
@@ -235,20 +235,20 @@
                             <div class="row g-2">
                                 <div class="col-md-3">
                                     <div class="councel">
-                                        <input id="councelName" name="councelName" type="text" class="form-control datetimepicker-input" placeholder="성함"/>
+                                        <input id="councelName" name="councelName" type="text" class="form-control datetimepicker-input" placeholder="name"/>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <div class="councel">
-                                        <input id="councelPhone" name="councelPhone" type="text" class="form-control datetimepicker-input" placeholder="전화번호"/>
+                                        <input id="councelPhone" name="councelPhone" type="text" class="form-control datetimepicker-input" placeholder="phone"/>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
                                     <select id="councelType" name="councelType" class="councel-select">
-                                        <option selected>상담 분류</option>
-                                        <option value="1">샷시</option>
-                                        <option value="2">철강</option>
-                                        <option value="3">덮개</option>
+                                        <option selected>categorization</option>
+                                        <option value="1">sash</option>
+                                        <option value="2">canopy</option>
+                                        <option value="3">lexan</option>
                                     </select>
                                 </div>
                             </div>
@@ -299,7 +299,7 @@
                                 <a class="btn btn-link" href="">Support</a>
                             </div>
                             <div class="col-md-6">
-                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">construction</h6>
                                 <a class="btn btn-link" href="">Food & Restaurant</a>
                                 <a class="btn btn-link" href="">Spa & Fitness</a>
                                 <a class="btn btn-link" href="">Sports & Gaming</a>

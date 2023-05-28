@@ -1,4 +1,4 @@
-package com.project.garam.services.controller;
+package com.project.garam.construction.controller;
 
 
 import java.util.HashMap;
@@ -13,12 +13,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.project.garam.common.CommonConstant;
 import com.project.garam.common.util.CommonUtil;
 @Controller
-@RequestMapping("services")
-public class ServicesController {
+@RequestMapping("construction")
+public class ConstructionController {
 	private final CommonUtil commonUtil;
 	
 	@Autowired
-	ServicesController(CommonUtil commonUtil){
+	ConstructionController(CommonUtil commonUtil){
 		this.commonUtil = commonUtil;
 	}
 	
@@ -29,11 +29,11 @@ public class ServicesController {
 	 * content : about main을 위한 controller
 	 */
 	@GetMapping("main")
-	public ModelAndView aboutMain(ModelAndView mv) {
+	public ModelAndView constructionMain(ModelAndView mv) {
 Map<String, String> mainMap = new HashMap<>();
 		
 		mainMap.put("mainYn", "N");
-		commonUtil.mainYn(mv, mainMap, "services");
+		commonUtil.mainYn(mv, mainMap, "construction");
 		
 		return mv;
 	}
