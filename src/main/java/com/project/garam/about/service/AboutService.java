@@ -26,4 +26,10 @@ public class AboutService {
 		
 		return mv;
 	}
+	
+	public ModelAndView addStaff(ModelAndView mv) {
+		mv.addObject("firstTest", "test1");
+		
+		return mv;
+	}
 }

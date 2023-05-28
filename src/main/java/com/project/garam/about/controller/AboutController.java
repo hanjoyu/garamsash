@@ -46,10 +46,17 @@ Map<String, String> mainMap = new HashMap<>();
 		return mv;
 	}
 	
-	public ModelAndView aboutTest(ModelAndView mv) {
-aboutService.aboutTest(mv);
-
-log.debug("=========== input Parameter ===========:: {} ", mv);
+	/*
+	 * author : 유한조(hanjo94@gmail.com)
+	 * date : 2023. 05. 06
+	 * name : aboutMain
+	 * content : about page 메인 controller
+	 */ 
+	@GetMapping("addstaff")
+	public ModelAndView addStaff(ModelAndView mv) {
+		aboutService.addStaff(mv);
+		
 		return mv;
 	}
+	
 }
