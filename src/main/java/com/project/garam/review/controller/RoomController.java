@@ -1,4 +1,4 @@
-package com.project.garam.room.controller;
+package com.project.garam.review.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +13,7 @@ import com.project.garam.common.CommonConstant;
 import com.project.garam.common.util.CommonUtil;
 
 @Controller
-@RequestMapping("room")
+@RequestMapping("review")
 public class RoomController {
 
 	private final CommonUtil commonUtil;
@@ -29,7 +29,7 @@ public class RoomController {
 		Map<String, String> mainMap = new HashMap<>();
 
 		mainMap.put("mainYn", "N");
-		commonUtil.mainYn(mv, mainMap, "room");
+		commonUtil.mainYn(mv, mainMap, "review");
 
 		return mv;
 	}

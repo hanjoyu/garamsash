@@ -49,6 +49,12 @@
     color: #FFFFFF;
 }
 
+.add-staff {
+display: inline-block; 
+margin: 0 5px;  
+float: right;
+}
+
 .btn-square {
     width: 38px;
     height: 38px;

@@ -162,12 +162,12 @@
 	                <a href="/construction/main" class="nav-item nav-link">construction</a>
 	            </th:block>
 	            
-	            <!-- main room 여부 -->
-	            <th:block th:if="${mainParam.viewName == 'room'}">
-	                <a href="/room/main" class="nav-item nav-link active">Rooms</a>
+	            <!-- main review 여부 -->
+	            <th:block th:if="${mainParam.viewName == 'review'}">
+	                <a href="/review/main" class="nav-item nav-link active">review</a>
 	            </th:block>    
-	            <th:block th:unless="${mainParam.viewName == 'room'}">
-	                <a href="/room/main" class="nav-item nav-link">Rooms</a>
+	            <th:block th:unless="${mainParam.viewName == 'review'}">
+	                <a href="/review/main" class="nav-item nav-link">review</a>
 	            </th:block>
 	            
 	            <!-- main pages 여부 -->
