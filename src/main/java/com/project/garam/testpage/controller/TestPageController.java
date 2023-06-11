@@ -56,12 +56,12 @@ public class TestPageController {
 	public void setTestDTO(TestDTO testDTO) {
 		String subStr = "0123456789";
 		subStr = subStr.substring(1, 5);
-		testDTO.setA("이지영");
-//		testDTO.setB("2");
-//		testDTO.setC("3");
-//		testDTO.setD("4");
-//		testDTO.setE("5");
-//		testDTO.setF("6");
+		testDTO.setA("1");
+		testDTO.setB("2");
+		testDTO.setC("3");
+		testDTO.setD("4");
+		testDTO.setE("5");
+		testDTO.setF("6");
 //		testDTO.setG(subStr);
 		
 //		return testDTO;
